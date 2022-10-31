@@ -1,0 +1,25 @@
+Heap size  |  Time
+256m           15c
+2G             msec:13578, sec:13
+3G             msec:14731, sec:14
+2500m          msec:13994, sec:13
+1G             msec:14421, sec:14
+1500m          msec:14095, sec:14
+1800m          msec:13922, sec:13
+2100m          msec:13424, sec:13 - optimal
+2300m          msec:13724, sec:13
+2200m          msec:13664, sec:13
+
+After refactoring
+-Xms256m(начальный выделенный)
+-Xmx256m(максимальный)  msec:1234, sec:1
+
+-Xms150m
+-Xmx150m                msec:1231, sec:1
+
+-Xms100m
+-Xmx100m                msec:1225, sec:1  - optimal
+
+-Xms50m
+-Xmx50m                 msec:1229, sec:1
+

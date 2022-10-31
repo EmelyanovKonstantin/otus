@@ -11,4 +11,5 @@ rootProject.name = 'otus'
 
 include 'hw01-gradle'
 
+include 'L08-gc:homework'
 
