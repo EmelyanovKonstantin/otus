@@ -14,4 +14,3 @@ include 'hw01-gradle'
 include 'L08-gc:homework'
 
 include 'L12-solid-hw'
-

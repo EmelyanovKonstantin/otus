@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
+}
+
+task prepareKotlinBuildScriptModel {
+
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'ru.calculator.CalcDemo'
+        )
+    }
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
