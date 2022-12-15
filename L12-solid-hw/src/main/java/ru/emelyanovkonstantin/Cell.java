@@ -20,13 +20,11 @@ public class Cell {
 
     public void putBanknote(Banknote banknote) {
         cellList.add(banknote);
-        cellSum += nominal.getNominal();
     }
 
     public Banknote getBanknote() throws EpmtyCellExeption {
         if (!cellList.isEmpty()) {
             Banknote banknote = cellList.remove(0);
-            cellSum -= nominal.getNominal();
             return banknote;
         } else {
             throw new EpmtyCellExeption("Cell empty: " + nominal.getNominal());
@@ -34,5 +32,13 @@ public class Cell {
     }
     public int getBanknoteQuantity() {
         return cellList.size();
+    }
+
+    public int getCellAmount() {
+        int amount = 0;
+        for(Banknote banknote : cellList){
+            amount += banknote.getNominalValue();
+        }
+        return amount;
     }
 }

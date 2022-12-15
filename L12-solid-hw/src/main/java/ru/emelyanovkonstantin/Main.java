@@ -8,8 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         CellFactory cellFactory = new CellFactory();
-        ATM atm = new ATM(cellFactory);
-        atm.start();
+        ATMImpl atm = new ATMImpl(cellFactory);
 
         System.out.println("The remaining funds in the ATM : " + atm.getAmount());
         Banknote banknote = new Banknote(Nominal.HUNDRED);

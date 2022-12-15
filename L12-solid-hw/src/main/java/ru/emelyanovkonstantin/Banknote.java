@@ -1,7 +1,7 @@
 package ru.emelyanovkonstantin;
 
 public class Banknote {
-    private Nominal nominal;
+    private final Nominal nominal;
     public Banknote(Nominal nominal) {
         this.nominal = nominal;
     }
